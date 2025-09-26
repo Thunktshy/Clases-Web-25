@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Servicios en la Nube - 22/09/2025</title>
+    <link rel="stylesheet" href="../styles/index.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modelos de Servicios en la Nube</h1>
+            <div class="subtitle">Infraestructura, Plataforma y Software como Servicio</div>
+            <div class="date">Clase - 22 de septiembre de 2025</div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <h2>Temas</h2>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active" data-slide="0">Introducción</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="1">IaaS - Infraestructura</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="2">Resumen IaaS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="3">PaaS - Plataforma</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="4">Resumen PaaS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="5">SaaS - Software</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="6">Resumen SaaS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="7">FaaS - Funciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="8">Resumen FaaS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="9">BaaS - Backend</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="10">Resumen BaaS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-slide="11">Comparativa</a></li>
+                </ul>
+                
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </aside>
+            
+            <main class="main-content">
+                <!-- Slide 1: Introducción -->
+                <div class="slide active" id="slide-0">
+                    <h2>Introducción a los Modelos de Servicios en la Nube</h2>
+                    
+                    <div class="card">
+                        <p>Los modelos de servicios en la nube representan diferentes niveles de abstracción que ofrecen los proveedores de cloud computing. Cada modelo proporciona un conjunto específico de recursos y servicios, permitiendo a las empresas elegir el nivel de control y gestión que necesitan.</p>
+                    </div>
+                    
+                    <h3>¿Por qué son importantes?</h3>
+                    <p>Estos modelos permiten a las organizaciones:</p>
+                    <ul>
+                        <li>Reducir costos de infraestructura física</li>
+                        <li>Escalar recursos según la demanda</li>
+                        <li>Acceder a tecnología avanzada sin grandes inversiones</li>
+                        <li>Enfocarse en su negocio principal en lugar de en la gestión de TI</li>
+                    </ul>
+                    
+                    <div class="example-box">
+                        <h4>Analogía: Construcción de una casa</h4>
+                        <p>Pensemos en los modelos de nube como diferentes niveles de servicio al construir una casa:</p>
+                        <ul>
+                            <li><strong>IaaS:</strong> Te alquilan el terreno y los materiales, tú construyes la casa</li>
+                            <li><strong>PaaS:</strong> Te dan una casa semiconstruida, tú la personalizas</li>
+                            <li><strong>SaaS:</strong> Te alquilan una casa completamente amueblada, solo te mudas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: IaaS -->
+                <div class="slide" id="slide-1">
+                    <h2>IaaS - Infraestructura como Servicio</h2>
+                    
+                    <div class="service-model">
+                        <div class="model-icon">IaaS</div>
+                        <div class="model-content">
+                            <h3>¿Qué es IaaS?</h3>
+                            <p>Infrastructure as a Service (IaaS) proporciona recursos de computación fundamentales como servidores virtualizados, almacenamiento y redes a través de Internet. Con IaaS, alquilas la infraestructura IT en lugar de comprarla físicamente.</p>
+                            
+                            <h3>Piezas para construir</h3>
+                            <ul>
+                                <li><strong>Servidores:</strong> Máquinas virtuales con diferentes capacidades de CPU, RAM y sistema operativo</li>
+                                <li><strong>Almacenamiento:</strong> Discos duros virtuales, almacenamiento de objetos, sistemas de archivos</li>
+                                <li><strong>Redes:</strong> Direcciones IP, balanceadores de carga, firewalls, redes virtuales privadas (VPC)</li>
+                            </ul>
+                            
+                            <div class="example-box">
+                                <h4>Ejemplos de IaaS</h4>
+                                <p><strong>Amazon Web Services (AWS):</strong> EC2 (servidores), S3 (almacenamiento), VPC (redes)</p>
+                                <p><strong>Microsoft Azure:</strong> Virtual Machines, Azure Storage, Virtual Network</p>
+                                <p><strong>Google Cloud Platform:</strong> Compute Engine, Cloud Storage, VPC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Resumen IaaS -->
+                <div class="slide" id="slide-2">
+                    <div class="summary-slide">
+                        <h2>Resumen: IaaS - Infraestructura como Servicio</h2>
+                        <p>IaaS es el modelo más básico de servicios en la nube, que ofrece recursos de infraestructura fundamental como servidores virtuales, almacenamiento y redes. Es ideal para empresas que necesitan un control completo sobre su entorno de TI pero quieren evitar la inversión en hardware físico.</p>
+                        
+                        <div class="image-container">
+                            <img src="../img/Picture1.jpg" alt="Diagrama de Infraestructura como Servicio">
+                            <p class="image-caption">La imagen muestra al usuario accediendo a sus servicios haciendo uso de la arquitectura de IaaS como componentes virtualizados</p>
+                        </div>
+                        
+                        <h3>Características clave:</h3>
+                        <ul>
+                            <li>Control total sobre el sistema operativo y aplicaciones</li>
+                            <li>Escalabilidad según demanda</li>
+                            <li>Modelo de pago por uso</li>
+                            <li>Responsabilidad del usuario sobre aplicaciones, datos y SO</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 4: PaaS -->
+                <div class="slide" id="slide-3">
+                    <h2>PaaS - Plataforma como Servicio</h2>
+                    
+                    <div class="service-model">
+                        <div class="model-icon">PaaS</div>
+                        <div class="model-content">
+                            <h3>¿Qué es PaaS?</h3>
+                            <p>Platform as a Service (PaaS) ofrece un entorno listo para desarrollar, probar y desplegar aplicaciones sin preocuparse por la infraestructura subyacente. Proporciona herramientas y servicios que facilitan el desarrollo de software.</p>
+                            
+                            <h3>Entorno de desarrollo</h3>
+                            <p>PaaS se centra en:</p>
+                            <ul>
+                                <li>Proporcionar un entorno completo para el ciclo de vida de desarrollo de aplicaciones</li>
+                                <li>Gestionar automáticamente la infraestructura (servidores, almacenamiento, redes)</li>
+                                <li>Ofrecer servicios adicionales como bases de datos, colas de mensajes, autenticación</li>
+                            </ul>
+                            
+                            <h3>Enfoque en código</h3>
+                            <p>Con PaaS, los desarrolladores pueden:</p>
+                            <ul>
+                                <li>Centrarse únicamente en escribir código de aplicación</li>
+                                <li>Desplegar aplicaciones con pocos clics o comandos</li>
+                                <li>Escalar automáticamente según la demanda</li>
+                                <li>Integrar fácilmente servicios adicionales</li>
+                            </ul>
+                            
+                            <div class="example-box">
+                                <h4>Ejemplos de PaaS</h4>
+                                <p><strong>Heroku:</strong> Plataforma para desplegar aplicaciones web con múltiples lenguajes</p>
+                                <p><strong>Google App Engine:</strong> Entorno para desarrollar y alojar aplicaciones web</p>
+                                <p><strong>Microsoft Azure App Service:</strong> Plataforma para crear aplicaciones web y móviles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 5: Resumen PaaS -->
+                <div class="slide" id="slide-4">
+                    <div class="summary-slide">
+                        <h2>Resumen: PaaS - Plataforma como Servicio</h2>
+                        <p>PaaS proporciona un entorno completo para desarrollar, probar y desplegar aplicaciones sin la necesidad de gestionar la infraestructura subyacente. Es ideal para desarrolladores que quieren centrarse en crear aplicaciones sin preocuparse por servidores, almacenamiento o redes.</p>
+                        
+                        <div class="image-container">
+                            <img src="../img/Picture2.jpg" alt="Diagrama de Plataforma como Servicio">
+                            <p class="image-caption">La imagen muestra cómo PaaS abstrae la infraestructura para centrarse en el desarrollo, el usuario usa la infraestructura como plataforma para el desarrollo.</p>
+                        </div>
+                        
+                        <h3>Características clave:</h3>
+                        <ul>
+                            <li>Entorno de desarrollo preconfigurado</li>
+                            <li>Gestión automática de la infraestructura</li>
+                            <li>Integración con servicios adicionales</li>
+                            <li>Escalado automático según demanda</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 6: SaaS -->
+                <div class="slide" id="slide-5">
+                    <h2>SaaS - Software como Servicio</h2>
+                    
+                    <div class="service-model">
+                        <div class="model-icon">SaaS</div>
+                        <div class="model-content">
+                            <h3>¿Qué es SaaS?</h3>
+                            <p>Software as a Service (SaaS) proporciona aplicaciones completas listas para usar a través de Internet. Los usuarios acceden al software a través de un navegador web sin necesidad de instalación o mantenimiento.</p>
+                            
+                            <h3>Software listo para trabajar</h3>
+                            <p>Características principales de SaaS:</p>
+                            <ul>
+                                <li>Accesible desde cualquier dispositivo con conexión a Internet</li>
+                                <li>Actualizaciones automáticas sin intervención del usuario</li>
+                                <li>Modelo de suscripción (pago por uso)</li>
+                                <li>Escalabilidad según las necesidades del usuario</li>
+                                <li>Los datos se almacenan en la nube del proveedor</li>
+                            </ul>
+                            
+                            <div class="example-box">
+                                <h4>Ejemplos de SaaS</h4>
+                                <p><strong>Google Workspace:</strong> Gmail, Docs, Sheets, Drive</p>
+                                <p><strong>Microsoft 365:</strong> Outlook, Word, Excel, Teams</p>
+                                <p><strong>Salesforce:</strong> CRM en la nube</p>
+                                <p><strong>Slack:</strong> Plataforma de colaboración en equipo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 7: Resumen SaaS -->
+                <div class="slide" id="slide-6">
+                    <div class="summary-slide">
+                        <h2>Resumen: SaaS - Software como Servicio</h2>
+                        <p>SaaS ofrece aplicaciones completas accesibles a través de Internet, eliminando la necesidad de instalación y mantenimiento local. Es ideal para usuarios finales y empresas que necesitan herramientas listas para usar sin complicaciones técnicas.</p>
+                        
+                        <div class="image-container">
+                            <img src="../img/Picture3.png" alt="Diagrama de Software como Servicio">
+                            <p class="image-caption">La imagen muestra cómo SaaS proporciona aplicaciones completas a través de la nube</p>
+                        </div>
+                        
+                        <h3>Características clave:</h3>
+                        <ul>
+                            <li>Acceso a través de navegador web</li>
+                            <li>Sin necesidad de instalación local</li>
+                            <li>Actualizaciones automáticas</li>
+                            <li>Modelo de suscripción</li>
+                            <li>Datos almacenados en la nube</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 8: FaaS -->
+                <div class="slide" id="slide-7">
+                    <h2>FaaS - Funciones como Servicio</h2>
+                    
+                    <div class="service-model">
+                        <div class="model-icon">FaaS</div>
+                        <div class="model-content">
+                            <h3>¿Qué es FaaS?</h3>
+                            <p>Functions as a Service (FaaS) es un modelo de computación sin servidor donde los desarrolladores escriben y despliegan funciones individuales que se ejecutan en respuesta a eventos específicos.</p>
+                            
+                            <h3>Funciones en respuesta a eventos</h3>
+                            <p>Características de FaaS:</p>
+                            <ul>
+                                <li>Ejecución de código sin gestionar servidores</li>
+                                <li>Pago solo por el tiempo de ejecución real</li>
+                                <li>Escalado automático e instantáneo</li>
+                                <li>Integración con otros servicios en la nube a través de eventos</li>
+                            </ul>
+                            
+                            <h3>Casos de uso comunes</h3>
+                            <ul>
+                                <li>Procesamiento de archivos subidos a almacenamiento</li>
+                                <li>Respuesta a solicitudes HTTP (API endpoints)</li>
+                                <li>Procesamiento de datos en tiempo real</li>
+                                <li>Automatización de tareas programadas</li>
+                            </ul>
+                            
+                            <div class="example-box">
+                                <h4>Ejemplos de FaaS</h4>
+                                <p><strong>AWS Lambda:</strong> Ejecuta código en respuesta a eventos</p>
+                                <p><strong>Azure Functions:</strong> Plataforma sin servidor de Microsoft</p>
+                                <p><strong>Google Cloud Functions:</strong> Entorno de ejecución de funciones en GCP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 9: Resumen FaaS -->
+                <div class="slide" id="slide-8">
+                    <div class="summary-slide">
+                        <h2>Resumen: FaaS - Funciones como Servicio</h2>
+                        <p>FaaS permite ejecutar código en respuesta a eventos sin necesidad de gestionar servidores. Es ideal para aplicaciones basadas en eventos, microservicios y automatización de procesos.</p>
+                        
+                        <div class="image-container">
+                            <img src="../img/Pictuture4.png" alt="Diagrama de Funciones como Servicio">
+                            <p class="image-caption">La imagen muestra la arquitectura event-driven de FaaS</p>
+                        </div>
+                        
+                        <h3>Características clave:</h3>
+                        <ul>
+                            <li>Ejecución basada en eventos</li>
+                            <li>Sin gestión de servidores</li>
+                            <li>Pago por tiempo de ejecución</li>
+                            <li>Escalado automático</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 10: BaaS -->
+                <div class="slide" id="slide-9">
+                    <h2>BaaS - Backend como Servicio</h2>
+                    
+                    <div class="service-model">
+                        <div class="model-icon">BaaS</div>
+                        <div class="model-content">
+                            <h3>¿Qué es BaaS?</h3>
+                            <p>Backend as a Service (BaaS) proporciona funcionalidades de backend preconstruidas que los desarrolladores pueden integrar en sus aplicaciones mediante APIs. Permite centrarse en el frontend sin desarrollar el backend desde cero.</p>
+                            
+                            <h3>Backend preconstruido</h3>
+                            <p>Servicios típicos ofrecidos por BaaS:</p>
+                            <ul>
+                                <li>Autenticación de usuarios</li>
+                                <li>Almacenamiento de datos</li>
+                                <li>APIs listas para usar</li>
+                                <li>Notificaciones push</li>
+                                <li>Integración con redes sociales</li>
+                            </ul>
+                            
+                            <h3>Ventajas de BaaS</h3>
+                            <ul>
+                                <li>Desarrollo más rápido de aplicaciones</li>
+                                <li>Reducción de costos de desarrollo</li>
+                                <li>Escalabilidad automática</li>
+                                <li>Mantenimiento gestionado por el proveedor</li>
+                            </ul>
+                            
+                            <div class="example-box">
+                                <h4>Ejemplos de BaaS</h4>
+                                <p><strong>Firebase (Google):</strong> Base de datos en tiempo real, autenticación, hosting</p>
+                                <p><strong>Back4App:</strong> Plataforma baja en código basada en Parse</p>
+                                <p><strong>AWS Amplify:</strong> Conjunto de herramientas para desarrollo frontend con backend en AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 11: Resumen BaaS -->
+                <div class="slide" id="slide-10">
+                    <div class="summary-slide">
+                        <h2>Resumen: BaaS - Backend como Servicio</h2>
+                        <p>BaaS ofrece funcionalidades de backend preconstruidas que los desarrolladores pueden integrar mediante APIs, permitiendo centrarse en el desarrollo del frontend. Es ideal para aplicaciones móviles y desarrollo rápido de MVP.</p>
+                        
+                        <div class="image-container">
+                            <img src="../img/Picture6.png" alt="Diagrama de Backend como Servicio">
+                            <p class="image-caption">La imagen muestra cómo BaaS proporciona backend preconstruido</p>
+                        </div>
+                        
+                        <h3>Características clave:</h3>
+                        <ul>
+                            <li>Backend preconstruido</li>
+                            <li>Integración mediante APIs</li>
+                            <li>Desarrollo más rápido</li>
+                            <li>Mantenimiento gestionado</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Slide 12: Comparativa -->
+                <div class="slide" id="slide-11">
+                    <h2>Comparativa de Modelos de Servicios en la Nube</h2>
+                    
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Control del Usuario</th>
+                                <th>Responsabilidad del Proveedor</th>
+                                <th>Ejemplos</th>
+                                <th>Casos de Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>IaaS</strong></td>
+                                <td>Máximo control sobre OS, aplicaciones y datos</td>
+                                <td>Infraestructura física, virtualización</td>
+                                <td>AWS EC2, Azure VM</td>
+                                <td>Migración de centros de datos, hosting web, big data</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PaaS</strong></td>
+                                <td>Aplicaciones y datos</td>
+                                <td>Infraestructura, sistema operativo, middleware</td>
+                                <td>Heroku, Google App Engine</td>
+                                <td>Desarrollo ágil de aplicaciones, APIs, microservicios</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SaaS</strong></td>
+                                <td>Configuración de la aplicación y datos</td>
+                                <td>Toda la pila tecnológica</td>
+                                <td>Gmail, Salesforce, Office 365</td>
+                                <td>Productividad empresarial, CRM, colaboración</td>
+                            </tr>
+                            <tr>
+                                <td><strong>FaaS</strong></td>
+                                <td>Código de función individual</td>
+                                <td>Infraestructura, ejecución, escalado</td>
+                                <td>AWS Lambda, Azure Functions</td>
+                                <td>Procesamiento de eventos, microservicios, automatización</td>
+                            </tr>
+                            <tr>
+                                <td><strong>BaaS</strong></td>
+                                <td>Frontend e integración con APIs</td>
+                                <td>Backend completo, bases de datos, autenticación</td>
+                                <td>Firebase, Back4App</td>
+                                <td>Aplicaciones móviles, desarrollo rápido de MVP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Evolución de los modelos</h3>
+                    <p>Los modelos de servicios en la nube han evolucionado para ofrecer mayores niveles de abstracción:</p>
+                    
+                    <div class="card">
+                        <p><strong>IaaS → PaaS → SaaS → FaaS/BaaS</strong></p>
+                        <p>A medida que avanzamos en esta cadena, el usuario tiene menos control sobre la infraestructura pero mayor facilidad de uso y menor carga de gestión.</p>
+                    </div>
+                    
+                    <h3>¿Cómo elegir el modelo adecuado?</h3>
+                    <ul>
+                        <li><strong>IaaS:</strong> Cuando necesitas control total sobre el entorno</li>
+                        <li><strong>PaaS:</strong> Para desarrollo rápido sin gestionar infraestructura</li>
+                        <li><strong>SaaS:</strong> Cuando quieres software listo para usar</li>
+                        <li><strong>FaaS:</strong> Para ejecución de código basada en eventos</li>
+                        <li><strong>BaaS:</strong> Para desarrollo frontend con backend preconstruido</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        
+        <div class="navigation">
+            <button class="btn" id="prev-btn" disabled>Anterior</button>
+            <span id="slide-counter">Slide 1 de 12</span>
+            <button class="btn" id="next-btn">Siguiente</button>
+        </div>
+        
+        <footer>
+            <p>Clase: Modelos de Servicios en la Nube - 22 de septiembre de 2025</p>
+        </footer>
+    </div>
+    <script type="module" src="../scripts/script.js"></script>/>
+</body>
+</html>
