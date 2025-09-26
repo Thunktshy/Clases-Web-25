@@ -342,7 +342,7 @@ footer {
 
 @media (max-width: 768px) {
   .image-container img {
-    max-width: min(70vw, 240px);
+    max-width: min(70vw, 200px);
     max-height: 240px;
   }
 }
