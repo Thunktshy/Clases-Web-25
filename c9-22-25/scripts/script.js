@@ -33,7 +33,7 @@
                 nextBtn.disabled = currentSlide === totalSlides - 1;
                 
                 // Actualizar contador
-                slideCounter.textContent = `Slide ${currentSlide + 1} de ${totalSlides}`;
+                slideCounter.textContent = `${currentSlide + 1} de ${totalSlides}`;
                 
                 // Actualizar barra de progreso
                 const progress = ((currentSlide + 1) / totalSlides) * 100;
