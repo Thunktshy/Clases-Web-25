@@ -3,16 +3,14 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3000; // or 3005, just be consistent with what you open in the browser
+const PORT = 3005; // mismo puerto que estás usando
 
-// Serve static files from THIS folder
-app.use(express.static(__dirname));
+// Servir archivos estáticos desde la carpeta c9-22-25
+app.use(express.static(path.join(__dirname, 'c9-22-25')));
 
-console.log(__dirname);
-
-// Default route → index.html in this folder
+// Ruta por defecto → index.html dentro de c9-22-25
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'c9-22-25', 'index.html'));
 });
 
 app.listen(PORT, () => {
