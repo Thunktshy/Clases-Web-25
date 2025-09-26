@@ -15,22 +15,19 @@ const PORT = process.env.PORT || 3005;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-/**
- * STATIC FILES → c9-22-25/
- */
-const STATIC_DIR = path.resolve(process.cwd(), 'c9-22-25');
+const PUBLIC_DIR = path.resolve(process.cwd(), 'c9-22-25');
 
-app.use(express.static(STATIC_DIR, {
-  index: 'paginas/index.html', 
-  maxAge: '1d'
+// Servir archivos estáticos (css/, scripts/, imágenes, etc.)
+app.use(express.static(PUBLIC_DIR, {
+  index: 'index.html',      // sirve /Public/index.html en "/"
+  maxAge: '1d',             // cache estáticos (opcional)
 }));
 
-/**
- * ROOT ROUTE (fallback)
- */
+// Ruta explícita a "/" 
 app.get('/', (_req, res) => {
-  res.sendFile(path.join(STATIC_DIR, 'paginas', 'index.html'));
+  res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
 });
+
 
 /**
  * START SERVER
